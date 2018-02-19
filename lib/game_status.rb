@@ -40,7 +40,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |value|
+  board.any? do |value|
     if value == " "
       return false
     end
