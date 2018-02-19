@@ -44,7 +44,7 @@ def full?(board)
     return true
   end
   full = board.all? do |position|
-    board[position] <> " "
+    board[position] == "X" || board[position] == "O"
   end 
   
   return full
