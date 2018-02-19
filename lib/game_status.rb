@@ -39,11 +39,12 @@ def won?(board)
 end
 
 def full?(board)
-  full = board.add? do |position|
-    board[position] != " "
-  end 
   if drew?(board)
     return true
   end
+  full = board.add? do |position|
+    board[position] != " "
+  end 
+  
   return full
 end
