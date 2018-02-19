@@ -27,6 +27,9 @@ def won?(board)
   return false
 end
 
+def over?(board)
+  drew?(board)
+
 def full?(board)
   not board.include?(" ")
 end
