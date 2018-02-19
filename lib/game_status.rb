@@ -43,9 +43,8 @@ def full?(board)
   if draw?(board)
     return true
   end
-  full = board.all? do |position|
-    board[position] == "X" || board[position] == "O"
-  end 
-  
-  return full
+  # full = board.all? do |position|
+  #   board[position] == "X" || board[position] == "O"
+  # end 
+  # return full
 end
