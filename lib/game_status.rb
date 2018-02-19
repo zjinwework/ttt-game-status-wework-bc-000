@@ -47,4 +47,5 @@ def full?(board)
   #   board[position] == "X" || board[position] == "O"
   # end 
   # return full
+  return false
 end
