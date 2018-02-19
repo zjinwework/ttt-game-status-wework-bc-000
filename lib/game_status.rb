@@ -40,9 +40,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.include? do |value|
-    if value == " "
-      return false
-    end
-  return true
+  not board.include?(" ")
 end
