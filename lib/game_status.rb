@@ -15,7 +15,7 @@ def drew?(board)
       board[position] == "O"
     end
     if all_x && all_o
-      return TRUE
+      return true
     end
   end
   return false
