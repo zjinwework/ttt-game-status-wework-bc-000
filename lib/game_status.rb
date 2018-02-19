@@ -28,7 +28,7 @@ def won?(board)
 end
 
 def over?(board)
-  drew?(board)
+  draw?(board)
 end
 
 def full?(board)
