@@ -40,4 +40,5 @@ def winner(board)
   if win_combo.length > 0
     return board[win_combo[0]]
   end
+  return
 end
