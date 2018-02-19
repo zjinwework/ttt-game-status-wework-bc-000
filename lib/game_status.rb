@@ -29,6 +29,7 @@ end
 
 def over?(board)
   drew?(board)
+end
 
 def full?(board)
   not board.include?(" ")
