@@ -34,3 +34,10 @@ end
 def full?(board)
   not board.include?(" ")
 end
+
+def winner(board)
+  win_combo = won?(board)
+  if win_combo.length > 0
+    return board[win_combo[0]]
+  end
+end
