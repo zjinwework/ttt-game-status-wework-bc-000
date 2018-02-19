@@ -21,6 +21,7 @@ def drew?(board)
   return false
       
 end
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
     all_x = win_combo.all? do |position|
@@ -42,7 +43,7 @@ def full?(board)
   if drew?(board)
     return true
   end
-  full = board.add? do |position|
+  full = board.all? do |position|
     board[position] != " "
   end 
   
